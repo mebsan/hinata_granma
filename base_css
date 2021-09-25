@@ -1,0 +1,3682 @@
+{block:IndexPage}
+{block:NoIndexPageCategory}
+{block:NoIndexPageSearch}
+<!-- TOP画面cssここから -->
+<style>  
+      h1 {
+      font-family: "ten-mincho", serif;
+      font-feature-settings: "ss02";
+      font-size: 16px;
+      color: #4a3035;
+    }
+    
+    h3 {
+      font-family: "Noto Sans JP";
+      font-size: 14px;
+      color: #4a3035;
+    }
+    
+    h4 {
+      font-family: "Noto Sans JP";
+      font-size: 13px;
+      color: #4a3035;
+    }
+    
+    p {
+      font-family: "Noto Sans JP";
+      font-size: 13px;
+    }
+    
+    a {
+      font-family: "Noto Sans JP";
+      color: #4a3035;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .base img{
+      width: 1.5vw;
+      height: 1.5vw;
+    }
+
+  .cart img{
+      width: 1.5vw;
+      height: 1.5vw;
+    }
+    
+    .more a {
+      font-size: 1vw;
+    }
+    
+    .more a {
+      font-size: 1vw;
+    }
+    
+    .build_to_order {
+      font-size: 0.885vw;
+      color: #43282d;
+      border-style: solid;
+      border-width: 1px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .granma {
+      position: fixed;
+    }
+    
+    .mv_mobile {
+      display: none;
+    }
+    
+    .mv_pc {
+      width: 49.219vw;
+      height: 100vh;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1628741683/hinatatown.img/mv-cat_2x_suobxw.png);
+      background-size: cover;
+      position: relative;
+      display: flex;
+      align-content: space-between;
+      background-position: center center;
+    }
+    
+  .logoImage{
+    display: block;
+    width: 21.563vw;
+    height: 12.135vw;
+    size: cover;
+    z-index: 100;
+  }
+    
+    .obaa {
+      width: 54.219vw;
+      height: 56.25vw;
+      position: absolute;
+      left: 0;
+    }
+    
+    .nav {
+      font-family: "Noto Sans JP";
+      width: 42.458vw;
+      height: 2.292vw;
+      background-color: white;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 25px;
+      bottom: 25px;
+    }
+
+
+    .clearfix{
+      display: flex;
+    justify-content: space-between;
+    width: 4vw;
+    }
+
+    .nav_mobile {
+      display: none;
+    }
+    
+    .sp-nav-btn {
+      display: none;
+      width: 30px;
+      height: 20px;
+      z-index: 700;
+    }
+    
+    .sp-nav-btn div {
+      width: 100%;
+      height: 2px;
+      background-color: #4a3035;
+    }
+    
+    ul {
+      width: 41.146vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    li {
+      list-style: none;
+      font-size: 0.781vw;
+      color: #4a3035;
+    }
+    
+    .contents {
+      width: 50.781vw;
+      max-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      overflow: auto;
+	  background-position: center center;
+    }
+    
+    .title {
+      margin: 1.771vw;
+    }
+    
+    .banner {
+      display: flex;
+      flex-direction: row;
+      margin-top: 2.5vw;
+      margin-bottom: 3vw;
+    }
+    
+    .banner img {
+      width: 40vw;
+    height: auto;
+    }
+    
+    .freshly {
+      width: 36.667vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 7.813vw;
+    }
+    
+    .freshly_product {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .freshly_main_hover {
+      width: 21.875vw;
+      height: 21.875vw;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: white;
+      margin-right: 1.146vw;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    
+    .freshly_main:hover .freshly_main_hover {
+      display: flex;
+    }
+    
+    .product_pagelink {
+      font-family: "Noto Sans JP";
+      font-size: 1vw;
+      width: 21.875vw;
+      height: 2.292vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 10px 10px;
+      background-color: rgba(67, 40, 45, 0.3);
+      position: absolute;
+      bottom: 0;
+    }
+    
+    .freshly_main {
+      width: 21.875vw;
+      height: 21.875vw;
+      border-radius: 10px;
+      background-color: red;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621846358/hinatatown-product-photo/IMG_5811_jju2pt.jpg);
+      background-size: cover;
+      background-position: center;
+      margin-right: 1.146vw;
+    }
+    
+    .freshly_main_mobile {
+      display: none;
+    }
+    
+    .freshly_sab {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .freshly_img_1 {
+      width: 13.021vw;
+      height: 13.021vw;
+      border-radius: 10px;
+      background-color: gray;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621846355/hinatatown-product-photo/IMG_5814_lybyfv.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .freshly_1_hover {
+      width: 13.021vw;
+      height: 13.021vw;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: white;
+      margin-right: 1.146vw;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    
+    .freshly1:hover .freshly_1_hover {
+      display: flex;
+    }
+    
+    .product_pagelink_sab1 {
+      font-family: "Noto Sans JP";
+      font-size: 1vw;
+      width: 13.021vw;
+      height: 2.292vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 10px 10px;
+      background-color: rgba(67, 40, 45, 0.3);
+      position: absolute;
+      bottom: 0;
+    }
+    
+    .freshly_img_2 {
+      width: 13.021vw;
+      height: 7.813vw;
+      border-radius: 10px;
+      background-color: gray;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621846356/hinatatown-product-photo/IMG_5828_g8gcgb.jpg);
+      background-size: cover;
+      background-position: center;
+      margin-top: 1.146vw;
+    }
+    
+    .freshly_2_hover {
+      width: 13.021vw;
+      height: 7.813vw;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: white;
+      margin-right: 1.146vw;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .freshly2:hover .freshly_2_hover {
+      display: flex;
+    }
+    .product_pagelink_sab2 {
+      font-family: "Noto Sans JP";
+      font-size: 1vw;
+      width: 13.021vw;
+      height: 2.292vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 10px 10px;
+      background-color: rgba(67, 40, 45, 0.3);
+      position: absolute;
+      bottom: 0;
+    }
+    .product_name {
+      font-size: 1vw;
+      width: 85%;
+      color: #43282d;
+      text-align: center;
+    }
+    .price {
+      width: 85%;
+      font-size: 1.5vw;
+      color: #43282d;
+      text-align: center;
+    }
+    .popular {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 7.813vw;
+    }
+    .popular_main {
+      width: 36.667vw;
+      height: 16.979vw;
+      border-radius: 10px;
+      margin-top: 2.083vw;
+    }
+    .popular_img_main {
+      width: 36.667vw;
+      height: 16.979vw;
+      border-radius: 10px;
+      background-color: aquamarine;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621846355/hinatatown-product-photo/IMG_5818_y5us6w.jpg);
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+    }
+    .popular_main_hover {
+      width: 36.667vw;
+      height: 16.979vw;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: white;
+      margin-right: 1.146vw;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .popular_main:hover .popular_main_hover {
+      display: flex;
+    }
+    .popular_main_product_pagelink {
+      font-family: "Noto Sans JP";
+      font-size: 1vw;
+      width: 36.667vw;
+      height: 2.292vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 10px 10px;
+      background-color: rgba(67, 40, 45, 0.3);
+      position: absolute;
+      bottom: 0;
+    }
+    .popular_sab_line {
+      width: 36.667vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .popular_img_1 {
+      width: 16.979vw;
+      height: 16.979vw;
+      border-radius: 10px;
+      background-color: gray;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621846358/hinatatown-product-photo/IMG_5811_jju2pt.jpg);
+      background-size: cover;
+      background-position: center;
+      margin-top: 2.083vw;
+    }
+    .popular_1 {
+      position: relative;
+    }
+    .popular_1_hover {
+      width: 16.979vw;
+      height: 16.979vw;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: white;
+      margin-right: 1.146vw;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .popular_1:hover .popular_1_hover {
+      display: flex;
+    }
+    .popular_1_product_pagelink {
+      font-family: "Noto Sans JP";
+      font-size: 1vw;
+      width: 16.979vw;
+      height: 2.292vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 10px 10px;
+      background-color: rgba(67, 40, 45, 0.3);
+      position: absolute;
+      bottom: 0;
+    }
+    .popular_img_2 {
+      width: 16.979vw;
+      height: 16.979vw;
+      border-radius: 10px;
+      background-color: gray;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621846355/hinatatown-product-photo/IMG_5815_hjrhlx.jpg);
+      background-size: cover;
+      background-position: center;
+      margin-top: 2.083vw;
+    }
+    .popular_2 {
+      position: relative;
+    }
+    .popular_2_hover {
+      font-family: "Noto Sans JP";
+      font-size: 2vw;
+      width: 16.979vw;
+      height: 16.979vw;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: white;
+      margin-right: 1.146vw;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .popular_2:hover .popular_2_hover {
+      display: flex;
+    }
+    .popular_2_product_pagelink {
+      font-family: "Noto Sans JP";
+      font-size: 1vw;
+      width: 16.979vw;
+      height: 2.292vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 10px 10px;
+      background-color: rgba(67, 40, 45, 0.3);
+      position: absolute;
+      bottom: 0;
+    }
+    .popular_img_3 {
+      width: 16.979vw;
+      height: 16.979vw;
+      border-radius: 10px;
+      background-color: gray;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621846356/hinatatown-product-photo/IMG_5828_g8gcgb.jpg);
+      background-size: cover;
+      background-position: center;
+      margin-top: 2.083vw;
+    }
+    .popular_3 {
+      position: relative;
+    }
+    .popular_3_hover {
+      width: 16.979vw;
+      height: 16.979vw;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: white;
+      margin-right: 1.146vw;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .popular_3:hover .popular_3_hover {
+      display: flex;
+    }
+    .popular_3_product_pagelink {
+      font-family: "Noto Sans JP";
+      font-size: 1vw;
+      width: 16.979vw;
+      height: 2.292vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 10px 10px;
+      background-color: rgba(67, 40, 45, 0.3);
+      position: absolute;
+      bottom: 0;
+    }
+    .popular_img_4 {
+      width: 16.979vw;
+      height: 16.979vw;
+      border-radius: 10px;
+      background-color: gray;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621846358/hinatatown-product-photo/IMG_5811_jju2pt.jpg);
+      background-size: cover;
+      background-position: center;
+      margin-top: 2.083vw;
+    }
+    .popular_4 {
+      position: relative;
+    }
+    .popular_4_hover {
+      width: 16.979vw;
+      height: 16.979vw;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: white;
+      margin-right: 1.146vw;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .popular_4:hover .popular_4_hover {
+      display: flex;
+    }
+    .popular_4_product_pagelink {
+      font-family: "Noto Sans JP";
+      font-size: 1vw;
+      width: 16.979vw;
+      height: 2.292vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 10px 10px;
+      background-color: rgba(67, 40, 45, 0.3);
+      position: absolute;
+      bottom: 0;
+    }
+    .popular h3 {
+      margin-top: 2.083vw;
+    }
+    
+    .link_product {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .news {
+      width: 39.563vw;
+      height: 26.042vw;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390450/hinatatown.img/news_background_2x_brompr.png);
+      background-size: contain;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding: 50px;
+    }
+    
+    .news h1 {
+      margin-top: 10px;
+    }
+    .day {
+      width: 30vw;
+      display: flex;
+      flex-direction: row;
+		margin:3px;
+    }
+    
+    .day h4 {
+      overflow: hidden;
+      margin-right: 13px;
+    }
+    .instagram {
+      display: flex;
+      align-items: center;
+      margin-top: 1vw;
+    }
+    .more {
+      display: flex;
+      flex-direction: row;
+      margin: 1.719vw;
+    }
+    .more img {
+      width: 1.094vw;
+      height: 1.094vw;
+      object-fit: contain;
+      margin-right: 0.5vw;
+    }
+    .thumbnail {
+      width: 36.458vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .instagram_thumbnail-1 {
+      width: 6.563vw;
+      height: 6.563vw;
+      border-radius: 10px;
+      background-color: #4a3035;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621482746/hinatatown-product-photo/insta_smn1_k9hatj.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .instagram_thumbnail-2 {
+      width: 6.563vw;
+      height: 6.563vw;
+      border-radius: 10px;
+      background-color: #4a3035;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621482747/hinatatown-product-photo/insta_smn2_qnqfyp.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .instagram_thumbnail-3 {
+      width: 6.563vw;
+      height: 6.563vw;
+      border-radius: 10px;
+      background-color: #4a3035;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621482746/hinatatown-product-photo/insta_smn3_r9ntre.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .instagram_thumbnail-4 {
+      width: 6.563vw;
+      height: 6.563vw;
+      border-radius: 10px;
+      background-color: #4a3035;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621482747/hinatatown-product-photo/insta_smn4_rqypje.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .instagram_thumbnail-5 {
+      width: 6.563vw;
+      height: 6.563vw;
+      border-radius: 10px;
+      background-color: #4a3035;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621482747/hinatatown-product-photo/insta_smn5_m393sy.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    footer {
+      width: 36.563vw;
+      height: 21.302vw;
+      background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390449/hinatatown.img/nav_mobile_background_2x_o1ukbr.png);
+      background-size: contain;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      left: 0;
+      margin-bottom: 1.719vw;
+      padding: 300px 50px 20px 50px;
+    }
+
+    .freshly_main_mobile {
+      display: none;
+    }
+    .freshly_main_mobile_small {
+      display: none;
+    }
+    hr {
+      display: none;
+    }
+    @media (max-width: 768px) {
+
+      .clearfix {
+        width: 10vw;
+      }
+
+      .base img{
+        width: 5.5vw;
+        height: 5.5vw;
+      }
+
+      .cart img{
+        width: 5.5vw;
+        height: 5.5vw;
+      }
+
+      h1 {
+        font-size: 14px;
+      }
+      h2 {
+        color: #43282d;
+      }
+      h3 {
+        font-family: "Noto Sans JP";
+      }
+      h4 {
+        font-family: "Noto Sans JP";
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+      }
+      .logoImage{
+        width: 34.5vw;
+        height: 19.5vw;
+      }
+    
+      .granma {
+        position: static;
+      }
+      .nav {
+        width: 0;
+        height: 0;
+      }
+      .nav-pc {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390449/hinatatown.img/nav_mobile_background_2x_o1ukbr.png);
+        background-position: bottom;
+        background-size: contain;
+        z-index: 1;
+      }
+    
+      .nav-pc-ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 70vh;
+        z-index: 700;
+        font-size: 5vw;
+        padding: 20px;
+      }
+      li {
+        font-size: 4.533vw;
+      }
+      .nav_mobile {
+        display: block;
+        width: 100vw;
+        position: absolute;
+        top: 20px;
+        right: -90vw;
+        z-index: 111111;
+      }
+      .nav div {
+        display: flex;
+        flex-direction: column;
+      }
+      .sp-nav-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+      }
+      .sp-nav-btn.active div {
+        transition: all 0.2s linear;
+      }
+    
+      .sp-nav-btn.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-7px, 11px);
+      }
+      .sp-nav-btn.active div:nth-child(2) {
+        display: none;
+      }
+      .sp-nav-btn.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-3px, -7px);
+      }
+      .mv_pc {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        background-image: none;
+        z-index: 111111;
+      }
+      .mv_mobile {
+        width: 100vw;
+        height: 109.333vw;
+        display: block;
+        position: static;
+        background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390449/hinatatown.img/mv_2x_a6kgdo.png);
+        background-size: cover;
+      }
+      .contents {
+        width: 100vw;
+        max-height: calc(100vh - 19.5vw);
+        bottom: 0;
+        overflow: scroll;
+      }
+      .banner {
+        width: 80vw;
+        justify-content: center;
+      }
+      .banner img {
+        width: 70vw;
+        height: auto;
+      }
+    
+      .title {
+        margin-bottom: 8vw;
+      }
+      .title img {
+        width: 40vw;
+      }
+      .freshly_product {
+        width: 84.267vw;
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+      }
+      .freshly_main {
+        width: 84.267vw;
+        height: 84.267vw;
+        margin-bottom: 6.133vw;
+      }
+      .build_to_order {
+            width: 13vw;
+        font-size: 0.885vw;
+        color: #43282d;
+        border-style: solid;
+        border-width: 1px;
+        display: flex;
+        justify-content: center;
+      }
+    
+      .freshly_main_mobile {
+        font-family: "Noto Sans JP";
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 6.133vw;
+      }
+      .freshly_main_mobile_small {
+        width: 37vw;
+        font-family: "Noto Sans JP";
+        text-align: center;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 6.133vw;
+      }
+      .freshly_main_mobile h2 {
+        font-size: 3.733vw;
+      }
+      .freshly_main_mobile_small h2 {
+        font-size: 3vw;
+      }
+      .freshly_sab {
+        display: flex;
+        flex-direction: column;
+      }
+      .freshly_img_1 {
+        height: 84.267vw;
+        width: 84.267vw;
+        margin-bottom: 6.133vw;
+      }
+      .freshly_img_2 {
+        width: 84.267vw;
+        height: 84.267vw;
+        margin-bottom: 6.133vw;
+      }
+      .freshly_main:hover .freshly_main_hover {
+        display: none;
+      }
+    
+      .freshly1:hover .freshly_1_hover {
+        display: none;
+      }
+      .freshly2:hover .freshly_2_hover {
+        display: none;
+      }
+      .popular_main:hover .popular_main_hover {
+        display: none;
+      }
+      .popular_1:hover .popular_1_hover {
+        display: none;
+      }
+      .popular_2:hover .popular_2_hover {
+        display: none;
+      }
+      .popular_3:hover .popular_3_hover {
+        display: none;
+      }
+      .popular_4:hover .popular_4_hover {
+        display: none;
+      }
+      .popular_img_main {
+        width: 84.267vw;
+        height: 38.933vw;
+        position: static;
+      }
+    
+      .popular_main {
+        width: 84.267vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6.133vw;
+        margin-top: 0;
+      }
+    
+      .popular_sab_line {
+        width: 83vw;
+      }
+      .popular_img_1 {
+        width: 39.2vw;
+        height: 39.467vw;
+        margin-bottom: 6.133vw;
+        margin-top: 0;
+      }
+      .popular_img_2 {
+        width: 39.2vw;
+        height: 39.467vw;
+        margin-bottom: 6.133vw;
+        margin-top: 0;
+      }
+      .popular_img_3 {
+        width: 39.2vw;
+        height: 39.467vw;
+        margin-bottom: 6.133vw;
+        margin-top: 0;
+      }
+      .popular_img_4 {
+        width: 39.2vw;
+        height: 39.467vw;
+        margin-bottom: 6.133vw;
+        margin-top: 0;
+      }
+      .news {
+        width: 100vw;
+        height: 106.933vw;
+        background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390450/hinatatown.img/news_responsive_2x_ozdz7f.png);
+        background-size: cover;
+        padding: 85px 50px 140px 50px;
+        margin-bottom: 6.133vw;
+      }
+      .day {
+        width: auto;
+        display: flex;
+        justify-content: row;
+      }
+      .border {
+        width: 79.467vw;
+        border-width: 1px;
+        border-style: dotted;
+      }
+      hr {
+        width: 80vw;
+        border-top: 2px dotted;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+        border-color: #43282d;
+        display: block;
+      }
+    
+      .day_title h4 {
+        width: 60vw;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .news h1 {
+        margin-top: 5vw;
+      }
+    
+      .day h4 {
+        font-family: "Noto Sans JP";
+        font-size: 12px;
+        margin: 1.5vw;
+      }
+
+      .instagram_thumbnail-1{
+        width: 15vw;
+        height: 15vw;
+      }
+
+
+      .instagram_thumbnail-2{
+        width: 15vw;
+        height: 15vw;
+      }
+
+
+      .instagram_thumbnail-3{
+        width: 15vw;
+        height: 15vw;
+      }
+
+
+      .instagram_thumbnail-4{
+        width: 15vw;
+        height: 15vw;
+      }
+
+
+      .instagram_thumbnail-5{
+        width: 15vw;
+        height: 15vw;
+      }
+    
+      .footer {
+        width: 100vw;
+        padding: 240px 50px 20px 50px;
+        display: flex;
+        flex-wrap: nowrap;
+      }
+      footer h4 {
+        font-size: 0.5vw;
+      }
+      .more {
+        display: flex;
+        align-items: center;
+      }
+      .more img {
+        width: 3.733vw;
+        height: 3.733vw;
+      }
+    
+      .thumbnail {
+        width: 90vw;
+      }
+      .instagram_thumbnail {
+        width: 20vw;
+        height: 20vw;
+        margin: 1vw;
+      }
+    }
+</style>
+<!-- TOP画面cssここまで -->
+{/block:NoIndexPageSearch}
+{/block:NoIndexPageCategory}
+{/block:IndexPage}
+
+
+{block:AboutPage}
+{block:NotItemPage}
+<!-- はじめましてさんへcssここから -->
+<style>
+
+.base img{
+  width: 1.5vw;
+      height: 1.5vw;
+    }
+
+.cart img{
+  width: 1.5vw;
+      height: 1.5vw;
+    }
+
+
+  h1 {
+  font-family: "ten-mincho", serif;
+  font-feature-settings: "ss02";
+  font-size: 16px;
+  color: #4a3035;
+  margin-bottom: 1.979vw;
+}
+
+h4 {
+  font-family: "Noto Sans JP";
+  font-size: 13px;
+  color: #4a3035;
+  line-height: 2.5;
+}
+
+h5 {
+  font-size: 12px;
+  color: white;
+}
+
+a {
+  font-family: "Noto Sans JP";
+  color: #4a3035;
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.granma {
+  position: relative;
+}
+
+.procedure{
+  margin-bottom: 5vw;
+}
+
+.mv_pc {
+  width: 49.219vw;
+  height: 100vh;
+   background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1628741683/hinatatown.img/mv-cat_2x_suobxw.png);
+   background-size: cover;
+   position: relative;
+   display: flex;
+   align-content: space-between;
+   background-position: center center;
+    }
+    
+
+.logoImage{
+  display: block;
+  width: 21.563vw;
+  height: 12.135vw;
+   z-index: 100;
+}
+
+.obaa {
+  width: 54.219vw;
+  height: 56.25vw;
+  position: absolute;
+  left: 0;
+}
+
+.nav {
+  font-family: "Noto Sans JP";
+  width: 42.458vw;
+  height: 2.292vw;
+  background-color: white;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+
+ul {
+  width: 41.146vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav {
+  font-family: "Noto Sans JP";
+  width: 42.458vw;
+  height: 2.292vw;
+  background-color: white;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+
+.nav_mobile {
+  display: none;
+  z-index: 100;
+}
+
+.sp-nav-btn {
+  display: none;
+  width: 30px;
+  height: 20px;
+  z-index: 700;
+}
+
+.sp-nav-btn div {
+  width: 100%;
+  height: 2px;
+  background-color: #4a3035;
+}
+
+ul {
+  width: 41.146vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  font-size: 0.781vw;
+  color: #4a3035;
+}
+
+.contents {
+  width: 50.781vw;
+  max-height: 51.25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  overflow: auto;
+}
+
+.nice_to_meet_you {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.979vw;
+}
+
+.h1 img {
+  width: 2.411vw;
+  height: 2.083vw;
+}
+
+.flow_after_ordering {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin: 1.771vw;
+  margin-bottom: 4.688vw;
+}
+
+.title img {
+  width: 12.031vw;
+  height: 3.49vw;
+}
+
+.sentence {
+  width: 32.24vw;
+  height: auto;
+  margin-bottom: 7.031vw;
+}
+
+.sentence_2 {
+  width: 32.24vw;
+  z-index: 100;
+}
+
+footer {
+  width: 36.563vw;
+  height: 21.302vw;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390447/hinatatown.img/house_2x_xeadvv.png);
+  background-size: contain;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 1.719vw;
+  padding: 300px 0px 20px 0px;
+  margin: -100px;
+}
+
+.table {
+  display: none;
+}
+
+.body{
+display: none;
+  }
+
+@media (max-width: 768px) {
+
+.contents{
+  width: 100vw;
+    max-height: calc(100vh - 35.467vw);
+    background-size: cover;
+    bottom: 0;
+    overflow: scroll;
+}
+
+  .clearfix {
+    width: 10vw;
+      }
+  
+  .base img{
+        width: 5.5vw;
+        height: 5.5vw;
+      }
+
+      .cart img{
+        width: 5.5vw;
+        height: 5.5vw;
+      }
+
+
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .body{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397088/hinatatown.img/responsive_mv_2x_n8ryfi.png);
+    background-size: cover;
+    position: fixed;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mv {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-image: none;
+  }
+
+  .mv_pc {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        background-image: none;
+        z-index: 11;
+      }
+
+.granma{
+  position: relative;
+    display: flex;
+    justify-content: center;
+}
+  .nav {
+    display: block;
+    background-color: transparent;
+  }
+
+  .nav-pc {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621392356/hinatatown.img/nav_mobile_background_2x_bdpmfe.png);
+    background-position: bottom;
+    background-size: contain;
+    z-index: 1;
+
+    display: none;
+  }
+
+  .nav-pc-ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    z-index: 700;
+    font-size: 5vw;
+    padding: 20px;
+  }
+
+  li {
+    font-size: 4.533vw;
+  }
+
+  .nav_mobile {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 20px;
+    right: -90vw;
+  }
+
+  .nav div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sp-nav-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+  }
+
+  .sp-nav-btn.active div {
+    transition: all 0.2s linear;
+  }
+
+  .sp-nav-btn.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-7px, 11px);
+  }
+
+  .sp-nav-btn.active div:nth-child(2) {
+    display: none;
+  }
+
+  .sp-nav-btn.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-3px, -7px);
+  }
+
+  .logo {
+    width: 100vw;
+    height: 35.467vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logoImage{
+    width: 62.933vw;
+    height: 35.467vw;
+  }
+
+
+  .flow_after_ordering {
+    z-index: 0;
+  }
+
+  .sentence img {
+    display: none;
+  }
+
+  .sentence {
+    width: 77.333vw;
+    margin: 0 auto;
+  }
+
+  .sentence_2 {
+    width: 77.333vw;
+    margin: 0 auto;
+    margin-bottom: 17vw;
+  }
+
+  .title {
+    margin-top: 16vw;
+    margin-bottom: 16vw;
+  }
+
+  .title img {
+    width: 42.667vw;
+    height: 10.667vw;
+  }
+
+  h1 {
+    font-size: 14px;
+    margin-bottom: 14.133vw;
+  }
+
+  h4 {
+    font-size: 12px;
+    font-family: "Noto Sans JP";
+  }
+
+  footer {
+    display: none;
+  }
+
+  .table {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+  }
+
+  .table img {
+    width: 100vw;
+  }
+
+  h5 {
+    font-size: 12px;
+    font-family: "Noto Sans JP";
+    position: absolute;
+    margin-top: 5vw;
+  }
+}
+</style>
+<!-- はじめましてさんへcssここまで -->
+{/block:NotItemPage}
+{/block:AboutPage}
+
+
+
+{block:AppsItemCategory}
+{block:IndexPageCategory}
+<!-- 商品一覧cssここから -->
+<style>
+
+.base img{
+  width: 1.5vw;
+      height: 1.5vw;
+    }
+
+.cart img{
+  width: 1.5vw;
+      height: 1.5vw;
+    }
+
+h1 {
+  font-family: "ten-mincho", serif;
+  font-feature-settings: "ss02";
+  font-size: 1.25vw;
+  color: #4a3035;
+  margin-bottom: 1.979vw;
+}
+
+h4 {
+  font-family: "Noto Sans JP";
+  font-size: 0.781vw;
+  color: #4a3035;
+}
+
+.price {
+  font-family: "Noto Sans JP";
+  font-size: 1.5vw;
+}
+
+a {
+  font-family: "Noto Sans JP";
+  color: #4a3035;
+  text-decoration: none;
+}
+
+.logo {
+  display: none;
+}
+
+.logoImage{
+    display: block;
+    width: 21.563vw;
+    height: 12.135vw;
+    size: cover;
+    z-index: 100;
+  }
+
+.nav-pc {
+  display: none;
+}
+
+.nav {
+  font-family: "Noto Sans JP";
+  width: 42.458vw;
+  height: 2.292vw;
+  background-color: white;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+
+.nav_mobile {
+  display: none;
+  z-index: 700;
+}
+
+.sp-nav-btn {
+  display: none;
+  width: 30px;
+  height: 20px;
+}
+
+.sp-nav-btn div {
+  width: 100%;
+  height: 2px;
+  background-color: #4a3035;
+}
+
+.left {
+  width: 7.292vw;
+  height: 100vh;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397221/hinatatown.img/left_2x_orjl3z.png);
+  background-size: cover;
+  position: fixed;
+  left: 0;
+}
+
+.right {
+  width: 7.292vw;
+  height: 100vh;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397221/hinatatown.img/right_2x_lans9e.png);
+  background-size: cover;
+  position: fixed;
+  right: 0;
+}
+
+.product_list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product_line {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product_name {
+  text-align: center;
+  font-family: "Noto Sans JP";
+  color: #43282d;
+  font-size: 1vw;
+}
+
+.product_1 {
+  width: 18.438vw;
+  height: 18.438vw;
+  position: relative;
+}
+
+.product_box_1 {
+  width: 22.656vw;
+  height: 22.656vw;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397222/hinatatown.img/wood1_2x_tyuedm.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_img_1 {
+  width: 18.438vw;
+  height: 18.438vw;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+.product_img_1 img{
+  width: 18.438vw;
+  height: 18.438vw;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+.product_1_hover {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color:#43282d;
+  margin-right: 1.146vw;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.product_1:hover .product_1_hover {
+  display: flex;
+}
+
+.product_1_pagelink {
+  font-family: "Noto Sans JP";
+  font-size: 1vw;
+  width: 18.438vw;
+  height: 2.292vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(67, 40, 45, 0.3);
+  position: absolute;
+  bottom: 0;
+}
+
+.product_2 {
+  width: 18.438vw;
+  height: 18.438vw;
+  position: relative;
+}
+
+.product_box_2 {
+  width: 22.656vw;
+  height: 22.656vw;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397223/hinatatown.img/wood2_2x_pnkqh1.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_img_2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: gray;
+  background-image: url(../photo/IMG_5815.JPG);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+.product_2_hover {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: white;
+  margin-right: 1.146vw;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.product_2:hover .product_2_hover {
+  display: flex;
+}
+
+.product_2_pagelink {
+  font-family: "Noto Sans JP";
+  font-size: 1vw;
+  width: 18.438vw;
+  height: 2.292vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(67, 40, 45, 0.3);
+  position: absolute;
+  bottom: 0;
+}
+
+.product_3 {
+  width: 18.438vw;
+  height: 18.438vw;
+  position: relative;
+}
+
+.product_box_3 {
+  width: 22.656vw;
+  height: 22.656vw;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397223/hinatatown.img/wood3_2x_mc2txm.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_img_3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: gray;
+  background-image: url(../photo/IMG_5825.JPG);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+.product_3_hover {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: white;
+  margin-right: 1.146vw;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.product_3:hover .product_3_hover {
+  display: flex;
+}
+
+.product_3_pagelink {
+  font-family: "Noto Sans JP";
+  font-size: 1vw;
+  width: 18.438vw;
+  height: 2.292vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(67, 40, 45, 0.3);
+  position: absolute;
+  bottom: 0;
+}
+
+.product_4 {
+  width: 18.438vw;
+  height: 18.438vw;
+  position: relative;
+}
+
+.product_box_4 {
+  width: 22.656vw;
+  height: 22.656vw;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397223/hinatatown.img/wood4_2x_uebdbd.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_img_4 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: gray;
+  background-image: url(../photo/IMG_5818.JPG);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+.product_4_hover {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: white;
+  margin-right: 1.146vw;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.product_4:hover .product_4_hover {
+  display: flex;
+}
+
+.product_4_pagelink {
+  font-family: "Noto Sans JP";
+  font-size: 1vw;
+  width: 18.438vw;
+  height: 2.292vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(67, 40, 45, 0.3);
+  position: absolute;
+  bottom: 0;
+}
+
+.product_line_4 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15vw;
+}
+
+.footer {
+  width: 100vw;
+  height: 16.354vw;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397222/hinatatown.img/table_2x_pwm9xk.png);
+  background-size: contain;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 90;
+}
+
+.footer h4 {
+  display: block;
+  font-family: "Noto Sans JP";
+  font-size: 0.781vw;
+  margin-left: 62vw;
+  position: absolute;
+  color: white;
+  left: 50px;
+  bottom: 25px;
+  z-index: 100;
+}
+
+ul {
+  width: 41.146vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  font-size: 0.781vw;
+  color: #4a3035;
+}
+
+.product_mobile {
+  display: none;
+}
+
+.build_to_order {
+  font-family: "Noto Sans JP";
+  font-size: 0.885vw;
+  color: #43282d;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+  .clearfix {
+    width: 10vw;
+      }
+
+  .base img{
+        width: 5.5vw;
+        height: 5.5vw;
+      }
+
+      .cart img{
+        width: 5.5vw;
+        height: 5.5vw;
+      }
+
+  h1 {
+    font-size: 4.533vw;
+  }
+
+  h2 {
+    color: #43282d;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+  }
+
+  .granma {
+    width: 100vw;
+    height: 19.5vw;
+    background-image: none;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .logo {
+    width: 34.5vw;
+    height: 19.5vw;
+    display: block;
+    z-index: 1;
+  }
+
+  .logoImage{
+    width: 34.5vw;
+    height: 19.5vw;
+  z-index: 100;
+}
+
+  .mv {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 700;
+  }
+
+  section .nav {
+    background-color: none;
+  }
+
+  .nav-pc {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-image: url(img/nav_mobile_background@2x.png);
+    background-position: bottom;
+    background-size: contain;
+    z-index: 0;
+    display: none;
+  }
+
+  .nav-pc-ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    z-index: 700;
+    font-size: 5vw;
+    padding: 20px;
+  }
+
+  li {
+    font-size: 4.533vw;
+  }
+
+  .nav_mobile {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 20px;
+    right: -90vw;
+  }
+
+  .nav div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sp-nav-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+  }
+
+  .sp-nav-btn.active div {
+    transition: all 0.2s linear;
+  }
+
+  .sp-nav-btn.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-7px, 11px);
+  }
+
+  .sp-nav-btn.active div:nth-child(2) {
+    display: none;
+  }
+
+  .sp-nav-btn.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-3px, -7px);
+  }
+
+  .main_section {
+    width: 100vw;
+    height: auto;
+    max-height: calc(100vh - 19.5vw);
+    position: absolute;
+    bottom: 0;
+  }
+
+  .contents {
+    width: 100vw;
+    bottom: 0;
+    overflow: scroll;
+  }
+
+  .title img {
+    width: 40vw;
+  }
+
+  .left {
+    display: none;
+    position: static;
+  }
+
+  .right {
+    display: none;
+    position: static;
+  }
+
+  .product_1_hover {
+    pointer-events: none;
+  }
+
+  .product_list {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/woods_responsive@2x.png);
+    background-repeat: repeat-y;
+  }
+
+  .product_line {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .product_line_4 {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: initial;
+    margin-bottom: initial;
+  }
+
+  .product_img_1 {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .product_img_1 img{
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .product_1:hover {
+    display: none;
+  }
+
+  .product_img_2 {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .product_2:hover {
+    display: none;
+  }
+
+  .product_img_3 {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .product_3:hover {
+    display: none;
+  }
+
+  .product_img_4 {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .product_4:hover {
+    display: none;
+  }
+
+  .product_1 {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .product_2 {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .product_3 {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .product_4 {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .product_box_1 {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .product_box_2 {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .product_box_3 {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .product_box_4 {
+    width: 50vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .build_to_order {
+    width: 13vw;
+    margin-bottom: 1vw;
+  }
+
+  .product_mobile {
+    width: 37vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 6.133vw;
+  }
+
+  .product_mobile h2 {
+    font-family: "Noto Sans JP";
+    font-size: 3vw;
+  }
+
+  .footer {
+    width: 100vw;
+    position: static;
+    background-size: cover;
+  }
+
+  .footer_contents {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .footer h4 {
+    font-size: 0.5vw;
+    position: static;
+    z-index: 1000;
+    margin-top: 10vw;
+    margin-left: 0;
+  }
+
+  footer .nav {
+    display: none;
+  }
+
+
+  .footer_contents .nav {
+    display: none;
+  }
+}
+</style>
+<!-- 商品一覧cssここまで -->
+{/block:IndexPageCategory}
+{/block:AppsItemCategory}
+
+
+{block:ItemPage}
+<!-- 商品詳細cssここから -->
+<style>
+body {
+    background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397221/hinatatown.img/background_wood_2x_bxu53s.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.base img{
+  width: 1.5vw;
+      height: 1.5vw;
+    }
+
+.cart img{
+  width: 1.5vw;
+      height: 1.5vw;
+    }
+
+h1 {
+  font-family: "ten-mincho", serif;
+  font-feature-settings: "ss02";
+  font-size: 1.823vw;
+  color: #4a3035;
+  margin-bottom: 1.979vw;
+}
+
+h2 {
+  font-family: "ten-mincho", serif;
+  font-feature-settings: "ss02";
+  font-size: 1.406vw;
+  color: #4a3035;
+  margin-bottom: 1.979vw;
+}
+
+h3,label {
+  font-family: "ten-mincho", serif;
+  font-feature-settings: "ss02";
+  font-size: 0.885vw;
+  color: #4a3035;
+}
+
+a {
+  font-family: "Noto Sans JP";
+  color: white;
+  text-decoration: none;
+}
+
+section .nav {
+  display: none;
+}
+
+
+.nav {
+  font-family: "Noto Sans JP";
+  width: 42.458vw;
+  height: 2.292vw;
+  background-color: white;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+
+.nav_mobile {
+  display: none;
+  z-index: 700;
+}
+
+.sp-nav-btn {
+  display: none;
+  width: 30px;
+  height: 20px;
+}
+
+.sp-nav-btn div {
+  width: 100%;
+  height: 2px;
+  background-color: #4a3035;
+}
+
+.nav-pc {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397221/hinatatown.img/nav_mobile_background_2x_q46ewi.png);
+  background-position: bottom;
+  background-size: contain;
+  z-index: 1;
+  display: none;
+}
+
+.nav-pc-ul {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+  z-index: 700;
+  font-size: 0.781vw;
+  padding: 20px;
+}
+
+li {
+  font-size: 4.533vw;
+}
+
+footer .nav {
+  font-family: "Noto Sans JP";
+  width: 46.458vw;
+  height: 2.292vw;
+  background-color: white;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  z-index: 1;
+}
+
+.nav_mobile {
+  display: block;
+  width: 100vw;
+  position: absolute;
+  top: 20px;
+  right: -90vw;
+}
+
+.nav div {
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-nav-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.sp-nav-btn.active div {
+  transition: all 0.2s linear;
+}
+
+.sp-nav-btn.active div:nth-child(1) {
+  transform: rotate(-45deg) translate(-7px, 11px);
+}
+
+.sp-nav-btn.active div:nth-child(2) {
+  display: none;
+}
+
+.sp-nav-btn.active div:nth-child(3) {
+  transform: rotate(45deg) translate(-3px, -7px);
+}
+
+.description {
+  width: 30vw;
+  font-family: "ten-mincho", serif;
+  font-feature-settings: "ss02";
+  color: #4a3035;
+  font-size: 0.781vw;
+}
+
+hr {
+  width: 40.104vw;
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #4a3035;
+  height: 1px;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+h4 {
+  font-family: "Noto Sans JP";
+  font-size: 0.781vw;
+  color: #4a3035;
+  line-height: 2.5;
+}
+
+.photo {
+  width: auto;
+  height: 84vh;
+  margin-top: 4vw;
+  position: fixed;
+  left: 7.292vw;
+  top: 0;
+}
+
+.main_photo {
+  width: 43.646vw;
+  height: 32.708vw;
+  border-radius: 10px;
+  background-color: grey;
+  background-image: {ItemImage1URL-640};
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1.198vw;
+}
+
+.main_photo img{
+  width: 43.646vw;
+  height: 32.708vw;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.sab_photo {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sab_1 img{
+  width: 13.958vw;
+  height: 10.469vw;
+  border-radius: 10px;
+  background-color: grey;
+  background-image: {ItemImage1URL-640};
+  background-size: cover;
+  background-position: center;
+}
+
+.sab_2 img{
+  width: 13.958vw;
+  height: 10.469vw;
+  border-radius: 10px;
+  background-color: grey;
+  background-image: {ItemImage1URL-640};
+  background-size: cover;
+  background-position: center;
+}
+
+.sab_3 img{
+  width: 13.958vw;
+  height: 10.469vw;
+  border-radius: 10px;
+  background-color: grey;
+  background-image: {ItemImage1URL-640};
+  background-size: cover;
+  background-position: center;
+}
+
+.infomation {
+  width: 41.615vw;
+  margin-top: 2.604vw;
+  right: 4.292vw;
+  position: absolute;
+  top: 0;
+}
+
+.title {
+  width: 37.083vw;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397220/hinatatown.img/granma_background_2x_tvzun8.png);
+  background-size: contain;
+  background-position: bottom;
+}
+
+.sentence {
+  width: 37.083vw;
+  display: flex;
+  justify-content: center;
+  margin-left: 1vw;
+}
+
+.price {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  color: #43282d;
+}
+
+.product_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.order {
+  width: 40.104vw;
+  height: 16.615vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+
+select {
+  width: 16.667vw;
+  height: 2.292vw;
+  border-radius: 5px;
+  font-size: 0.885vw;
+  color: #4a3035;
+  border: #707070 0.5px inset;
+  margin: 1vw;
+  padding-left: 2vw;
+  line-height: normal;
+}
+
+.select_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.option {
+  color: #4a3035;
+}
+
+.btn {
+  width: 20.729vw;
+  height: 2.292vw;
+  border-radius: 22px;
+  color: white;
+  background-color: #4a3035;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.99vw;
+  font-family: "ten-mincho", serif;
+  font-feature-settings: "ss02";
+  margin-top: 1.771vw;
+  margin-bottom: 1.771vw;
+}
+
+.precautions {
+  width: 35.104vw;
+  margin-bottom: 12.031vw;
+}
+
+.precautions h4 {
+  margin-left: 1vw;
+}
+
+.footer {
+  width: 100vw;
+  height: 16.354vw;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397222/hinatatown.img/table_2x_pwm9xk.png);
+  background-size: contain;
+  position: fixed;
+  bottom: 0;
+  z-index: 90;
+}
+
+.footer h4 {
+  display: block;
+  font-size: 0.781vw;
+  margin-left: 62vw;
+  position: absolute;
+  color: white;
+  left: 50px;
+  bottom: 25px;
+  z-index: 100;
+}
+
+ul {
+  width: 41.146vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  font-size: 0.781vw;
+  color: #4a3035;
+}
+
+.table {
+  display: none;
+}
+
+.logoImage{
+  display: none;
+}
+
+.nav_mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .clearfix {
+    width: 10vw;
+      }
+
+
+  body {
+    width: auto;
+    height: auto;
+    background-image: none;
+  }
+
+  .base img{
+        width: 5.5vw;
+        height: 5.5vw;
+      }
+
+      .cart img{
+        width: 5.5vw;
+        height: 5.5vw;
+      }
+
+
+  h1 {
+    font-size: 5.333vw;
+  }
+
+  h2 {
+    font-size: 5.333vw;
+  }
+
+  h3 {
+    font-family: "Noto Sans JP";
+    font-size: 4vw;
+    margin-right: 2vw;
+  }
+
+  h4 {
+    font-family: "Noto Sans JP";
+    font-size: 4.267vw;
+  }
+
+  .granma {
+    display: block;
+    width: 100vw;
+    height: 19.5vw;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .mv {
+    width: 100vw;
+    height: 19.5vw;
+    background-image: none;
+  }
+
+  .nav_mobile {
+    display: block;
+    width: 100vw;
+    height: 100wh;
+    background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397221/hinatatown.img/nav_mobile_background_2x_q46ewi.png);
+  }
+
+  section .nav {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  .nav-pc {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397221/hinatatown.img/nav_mobile_background_2x_q46ewi.png);
+    background-position: bottom;
+    background-size: contain;
+    z-index: 1;
+
+    display: none;
+  }
+
+  .nav-pc-ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    z-index: 700;
+    font-size: 5vw;
+    padding: 20px;
+  }
+
+  li {
+    font-size: 4.533vw;
+  }
+
+  .nav_mobile {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 20px;
+    right: -90vw;
+  }
+
+  .nav div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sp-nav-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+  }
+
+  .sp-nav-btn.active div {
+    transition: all 0.2s linear;
+  }
+
+  .sp-nav-btn.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-7px, 11px);
+  }
+
+  .sp-nav-btn.active div:nth-child(2) {
+    display: none;
+  }
+
+  .sp-nav-btn.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-3px, -7px);
+  }
+
+  .nav div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logoImage{
+    display: block;
+    width: 34.5vw;
+    height: 19.5vw;
+    z-index: 111;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contents {
+    width: 100vw;
+    height: auto;
+    max-height: calc(100vh - 19.5vw);
+    position: absolute;
+    bottom: 0;
+  }
+
+  .product_list {
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397221/hinatatown.img/background_wood_2x_bxu53s.png);
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+
+  .photo {
+    width: 85.067vw;
+    height: auto;
+    position: static;
+    left: auto;
+  }
+
+  .main_photo {
+    width: 85.067vw;
+    height: 63.733vw;
+  }
+
+  .main_photo img{
+    width: 85.067vw;
+    height: 63.733vw;
+  }
+
+  .sab_photo {
+    width: 85.067vw;
+    height: auto;
+  }
+
+  .sab_1 {
+    width: 27.467vw;
+    height: 20.533vw;
+  }
+
+  .sab_2 {
+    width: 27.467vw;
+    height: 20.533vw;
+  }
+
+  .sab_3 {
+    width: 27.467vw;
+    height: 20.533vw;
+  }
+
+  .sab_1 img{
+    width: 27.467vw;
+    height: 20.533vw;
+  }
+
+  .sab_2 img{
+    width: 27.467vw;
+    height: 20.533vw;
+  }
+
+  .sab_3 img{
+    width: 27.467vw;
+    height: 20.533vw;
+  }
+
+  .select_box img {
+    width: 1.333vw;
+    right: 24vw;
+  }
+
+  .infomation {
+    width: 85.067vw;
+    position: static;
+    height: auto;
+    background-image: none;
+  }
+
+  .sentence {
+    width: 85.067vw;
+  }
+
+  .description {
+    width: 85.067vw;
+    height: auto;
+    font-family: "Noto Sans JP";
+    font-size: 4.267vw;
+  }
+
+  .title {
+    width: auto;
+    margin-top: 10.667vw;
+    margin-bottom: 10.667vw;
+    background-image: none;
+  }
+
+  .price {
+    margin-bottom: 23.467vw;
+  }
+
+  .order {
+    width: 85.067vw;
+    height: auto;
+  }
+
+  .select_box {
+    margin-bottom: 7.733vw;
+  }
+
+  select {
+    width: 45.867vw;
+    height: 6.4vw;
+    font-size: 4vw;
+  }
+
+  .btn {
+    width: 57.067vw;
+    height: 6.4vw;
+    font-size: 4vw;
+  }
+
+  hr {
+    width: 84.533vw;
+    margin-top: 10.667vw;
+    margin-bottom: 10.667vw;
+  }
+
+  .precautions {
+    width: 85.067vw;
+    height: auto;
+  }
+
+  .logoImage{
+    width: 34.5vw;
+    height: 19.5vw;
+    margin: 0 auto;
+  }
+
+  .left {
+    display: none;
+    position: static;
+  }
+
+  .right {
+    display: none;
+    position: static;
+  }
+
+  .footer_contents {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+  }
+
+  .footer {
+    width: 100vw;
+    position: static;
+  }
+
+  .footer h4 {
+    font-size: 0.5vw;
+    position: static;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    margin-left: 22vw;
+    margin-top: 10vw;
+  }
+
+  .footer_contents .nav {
+    display: none;
+  }
+}
+</style>
+<!-- 商品詳細ページcssここまで -->
+
+{/block:ItemPage}
+
+
+{block:ContactPage}
+<!-- お問い合わせcssここから -->
+<style>
+
+.base img{
+  width: 1.5vw;
+      height: 1.5vw;
+    }
+
+.cart img{
+  width: 1.5vw;
+      height: 1.5vw;
+    }
+
+
+  h1 {
+  font-family: "ten-mincho", serif;
+  font-feature-settings: "ss02";
+  font-size: 1.302vw;
+  color: #4a3035;
+  margin: 0 auto;
+}
+
+.inquirySection h1{
+  display: none;
+}
+
+p , dt{
+  font-family: "ten-mincho", serif;
+  font-size: 0.885vw;
+  color: #4a3035;
+}
+
+a {
+  font-family: "Noto Sans JP";
+  color: #4a3035;
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.granma {
+  position: fixed;
+}
+
+.mv_pc {
+  width: 49.219vw;
+  height: 100vh;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1628741682/hinatatown.img/sanset_2x_zxycn8.png);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-content: space-between;
+  background-position: center center;
+}
+
+.logoImage{
+  width: 21.563vw;
+  height: 12.135vw;
+  z-index: 100;
+}
+
+.obaa {
+  width: 54.219vw;
+  height: 56.25vw;
+  position: absolute;
+  left: 0;
+}
+
+.nav {
+  font-family: "Noto Sans JP";
+  width: 42.458vw;
+  height: 2.292vw;
+  background-color: white;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+
+.nav_mobile {
+  display: none;
+}
+
+.sp-nav-btn {
+  display: none;
+  width: 30px;
+  height: 20px;
+  z-index: 700;
+}
+
+.sp-nav-btn div {
+  width: 100%;
+  height: 2px;
+  background-color: #4a3035;
+}
+
+ul {
+  width: 41.146vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  font-size: 0.781vw;
+  color: #4a3035;
+}
+
+.contents {
+  width: 50.781vw;
+  height: 51.25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390448/hinatatown.img/mail_background_2x_pyhbcl.png);
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  overflow: auto;
+}
+
+.title {
+  margin-top: 4vw;
+}
+
+.title img {
+  margin-bottom: 0.5vw;
+  margin-top: -10px;
+}
+
+hr {
+  width: 35.104vw;
+  border-width: 1px 0px 0px 0px; /* 太さ */
+  border-style: solid; /* 線種 */
+  border-color: #68767f; /* 線色 */
+  height: 1px; /* 高さ(※古いIE用) */
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+form {
+  width: 32vw;
+  height: 35.833vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.form_name {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form_mail {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form_phone_number {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form_id {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  font: 0.885vw sans-serif;
+  box-sizing: border-box;
+  width: 31.813vw;
+  height: 2.292vw;
+  padding: 1vw;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #4a3035;
+  border-radius: 10px;
+  background-color: white;
+  
+  margin: 1vw;
+}
+
+.form_subject {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form_inquiry {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+textarea {
+  font: 0.885vw sans-serif;
+  box-sizing: border-box;
+  width: 31.813vw;
+  height: 12.865vw;
+  padding: 1vw;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #4a3035;
+  border-radius: 10px;
+  background-color: white;
+  margin: 1vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.control-panel input {
+  height: 3.292vw;
+  border-radius: 22px;
+  color: white;
+  background-color: #4a3035;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.99vw;
+  font-family: "ten-mincho", serif;
+  font-feature-settings: "ss02";
+  margin-top: 1.771vw;
+}
+
+footer {
+  width: 36.563vw;
+  height: 21.302vw;
+  background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390447/hinatatown.img/house_2x_xeadvv.png);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 1.719vw;
+  padding: 300px 50px 20px 50px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-family: "ten-mincho", serif;
+    font-feature-settings: "ss02";
+    font-size: 1.302vw;
+    color: #4a3035;
+  }
+
+  body {
+    background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390448/hinatatown.img/mail_responsive_2x_f8tftx.png);
+    background-size: cover;
+  }
+
+  p,dt{
+    font-size: 3.5vw;
+  }
+
+  span{
+    font-size: 3.5vw;
+  }
+
+  .clearfix {
+    width: 10vw;
+      }
+
+  .base img{
+        width: 5.5vw;
+        height: 5.5vw;
+      }
+
+      .cart img{
+        width: 5.5vw;
+        height: 5.5vw;
+      }
+
+
+.clearfix{
+  display: flex;
+    justify-content: space-between;
+    width: 10vw;
+}
+
+  section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contents{
+    overflow: scroll;
+    position: fixed;
+  }
+
+  .mv_pc{
+    width: 100vw;
+    height: auto;
+   background-image: none;
+   display: flex;
+   justify-content: center;
+   z-index: 1;
+  }
+
+  .mv {
+    width: 100vw;
+    height: 19.5vw;
+    background-image: none;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-pc {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-image: url(https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397221/hinatatown.img/nav_mobile_background_2x_q46ewi.png);
+    background-position: bottom;
+    background-size: contain;
+    z-index: 0;
+    display: none;
+  }
+
+  .nav-pc-ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    z-index: 700;
+    font-size: 0.781vw;
+    padding: 20px;
+  }
+
+.nav{
+    background-color: transparent;
+  }
+
+  li {
+    font-size: 4.533vw;
+  }
+
+  .nav_mobile {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 20px;
+    right: -90vw;
+    z-index: 1;
+  }
+
+  .nav div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sp-nav-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+  }
+
+  .sp-nav-btn.active div {
+    transition: all 0.2s linear;
+  }
+
+  .sp-nav-btn.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-7px, 11px);
+  }
+
+  .sp-nav-btn.active div:nth-child(2) {
+    display: none;
+  }
+
+  .sp-nav-btn.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-3px, -7px);
+  }
+
+  .logoImage{
+    width: 34.5vw;
+    height: 19.5vw;
+  }
+
+  .contents {
+    width: 100vw;
+    height: auto;
+    max-height: calc(100vh - 19.5vw);
+    bottom: 0;
+    z-index: -1;
+    background-image: none;
+  }
+
+  hr {
+    width: 80vw;
+  }
+
+  form {
+    width: 80vw;
+    height: auto;
+    font: 4.134vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .form_name {
+    display: block;
+    margin: 0.5vw;
+  }
+
+  .form_id {
+    display: block;
+    margin: 0.5vw;
+  }
+
+  .form_mail {
+    display: block;
+    margin: 0.5vw;
+  }
+
+  .form_phone_number {
+    display: block;
+    margin: 0.5vw;
+  }
+
+  .form_subject {
+    display: block;
+    margin: 0.5vw;
+  }
+
+  .form_inquiry {
+    margin-bottom: 3vw;
+    display: block;
+  }
+
+  .control-panel input{
+    height: 7vw;
+    margin-bottom: 2vw;
+    font-size: 3.5vw;
+  }
+
+  input[type="text"] {
+    font-size: 3.5vw;
+    font-family: "Noto Sans JP";
+    box-sizing: border-box;
+    width: 75.969vw;
+    height: 8.786vw;
+    padding: 1vw;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    color: #4a3035;
+    border-radius: 10px;
+    background-color: white;
+    margin: 1vw;
+  }
+
+  textarea {
+    font-size: 3.5vw;
+    font-family: "Noto Sans JP";
+    box-sizing: border-box;
+    width: 75.969vw;
+    height: 49.612vw;
+    padding: 1vw;
+  }
+
+  h1 {
+    font-size: 5.943vw;
+  }
+
+  h4 {
+    font-size: 3.5vw;
+    font-family: "Noto Sans JP";
+  }
+
+  .btn {
+    width: 72.868vw;
+    height: 8.786vw;
+    border-radius: 17px;
+    font-size: 4.134vw;
+  }
+
+  footer {
+    display: none;
+  }
+}
+</style>
+{/block:ContactPage}
+<!-- お問い合わせcssここまで -->
+
+<!-- プライバシーポリシーと特商法cssここから -->
+  {block:PrivacyPage}
+<style>
+
+  body{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .base img{
+    width: 1.5vw;
+      height: 1.5vw;
+    }
+
+.cart img{
+  width: 1.5vw;
+      height: 1.5vw;
+    }
+
+  .privacy{
+    width: 80vw;
+  }
+
+h2 {
+    font-family: "ten-mincho", serif;
+    font-feature-settings: "ss02";
+    font-size: 3vw;
+     color: #43282d;
+     margin-bottom: 1vw;
+  }
+
+  p {
+    font-family: "ten-mincho", serif;
+    font-feature-settings: "ss02";
+    font-size: 2vw;
+     color: #43282d;
+     margin-bottom: 2vw;
+  }
+
+  dl {
+    font-family: "Noto Sans JP";
+    font-size: 1vw;
+     color: #43282d;
+     margin-bottom: 1vw;
+  }
+
+  dd {
+    font-family: "Noto Sans JP";
+    font-size: 1vw;
+     color: #43282d;
+     margin-bottom: 1vw;
+  }
+
+  dt {
+    font-family: "Noto Sans JP";
+    font-size: 1vw;
+     color: #43282d;
+     margin-bottom: 1vw;
+  }
+
+</style>
+ {/block:PrivacyPage}
+
+
+ {block:LawPage}
+<style>
+
+  body{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .base img{
+    width: 1.5vw;
+      height: 1.5vw;
+    }
+
+.cart img{
+  width: 1.5vw;
+      height: 1.5vw;
+    }
+
+h2 {
+  font-family: "ten-mincho", serif;
+    font-feature-settings: "ss02";
+    font-size: 3vw;
+     color: #43282d;
+     margin: 1vw;
+  }
+
+  h3{
+    font-family: "Noto Sans JP";
+    font-size: 1.5vw;
+     color: #43282d;
+     margin-bottom: 1vw;
+  }
+
+  p {
+    font-family: "Noto Sans JP";
+    font-size: 1vw;
+     color: #43282d;
+     margin-bottom: 2vw;
+  }
+
+  dl {
+    font-family: "Noto Sans JP";
+    font-size: 1vw;
+     color: #43282d;
+     margin-bottom: 1vw;
+  }
+
+  dd {
+    font-family: "Noto Sans JP";
+    font-size: 1vw;
+     color: #43282d;
+     margin-bottom: 3vw;
+  }
+
+  dt {
+    font-family: "Noto Sans JP";
+    font-size: 1.5vw;
+     color: #43282d;
+     margin-bottom: 1vw;
+  }
+
+</style>
+  {/block:LawPage}
+</head>
