@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+        <meta charset="utf-8">
+        <meta name="copyright" content="BASE">
+        <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>{PageTitle}</title>
+    {FaviconTag}
+    {CanonicalTag}
+
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    {JQueryTag}
+    <script src="https://res.cloudinary.com/hinatatown-photo/raw/upload/v1621403262/hinatatown.code/main_n0rac0.js"></script>
+    <script src="https://use.typekit.net/fya1swr.js"></script>
+
+
+    {GoogleAnalyticsTag}	
+
+    <script>
+      try {
+        Typekit.load({ async: true });
+      } catch (e) {}
+    </script>
+    <link
+    href="https://fonts.googleapis.com/css?family=Noto+Sans+JP"
+    rel="stylesheet"
+  />
+
+  {BackgroundTag}
+
+  <style>
+  .clearfix {
+    display: flex;
+    justify-content: space-between;
+    width: 4vw;
+  }
+    </style>
+<!--ここにCSSはさむ-->
+<body>
+{block:IndexPage}{block:NoIndexPageCategory}{block:NoIndexPageSearch}
+<!-- {block:NotItemPage} -->
+<!-- TOP画面htmlここから -->
+
+  <section>
+    
+    <div class="granma">
+        <div class="mv_pc">
+          <div class="logo">
+            {LogoTag}
+          </div>
+          </div>
+          <nav class="nav">
+            <nav class="nav-pc">
+                    <ul class="nav-pc-ul">
+                        <a href="{IndexPageURL}"><li>トップ</li></a>
+                        <a href="{AboutPageURL}"><li>はじめましてさんへ</li></a>
+
+                            <a href="https://hinatagranma.handcrafted.jp/categories/3468571"><li>商品一覧</li></a>
+                            
+                        <a href="{ContactPageURL}"><li>お問い合わせ</li></a>
+                        <a href="https://www.instagram.com/{ShopInstagramId}"> <li>おばすたぐらむ</li></a>
+                        {BASEMenuTag}
+                    </ul>
+            </nav>
+          </nav>
+        <nav class="nav_mobile">
+          <div class="sp-nav-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>
+      </div>
+      </div>
+
+      
+      <div class="contents">
+
+        <section class="mv_mobilephone">
+          <div class="mv_mobile"></div>
+        </section>
+        <section class="banner">
+          <img src="https://res.cloudinary.com/hinatatown-photo/image/upload/v1628818048/hinatatown.img/banner-open_2x_bvxnno.png" alt="opening-celebration"/>
+        </section>
+
+        <section class="freshly">
+          <div class="title">
+            <img src="https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390446/hinatatown.img/freshly_2x_puh9hv.png" alt="できたてアイテム" />
+          </div>
+
+          <div class="freshly_product">
+            <a href="{ItemPageURL}">
+            
+              <div class="freshly_main">
+                <div class="freshly_main_hover">
+                  <p class="build_to_order">受注生産</p>
+                  <p class="product_name">乙女時代の刺繍がまぐち</p>
+                  <p class="price">¥1,200-</p>
+                  <div class="product_pagelink">クリックで詳細</div>
+                </div>
+                <div class="freshly_img_main"></div>
+              </div>
+              <div class="freshly_main_mobile">
+                      <p class="build_to_order">受注生産</p>
+                      <h2>乙女時代の刺繍がまぐち</h2>
+                      <h2>¥1,200-</h2>
+              </div>
+            </a>
+
+            <a href="{ItemPageURL}">
+            
+              <div class="freshly_sab">
+                <div class="freshly1">
+                  <div class="freshly_img_1">
+                    <div class="freshly_1_hover">
+                      <p class="product_name">
+                          乙女時代の刺繍がまぐち
+                      </p>
+                      <p class="price">¥1,200-</p>
+                      <div class="product_pagelink_sab1">クリックで詳細</div>
+                    </div>
+                  </div>
+                  <div class="freshly_main_mobile">
+                      <p class="build_to_order">受注生産</p>
+                      <h2>乙女時代の刺繍がまぐち</h2>
+                      <h2>¥1,200-</h2>
+                </div>
+            </a>
+
+            <a href="{ItemPageURL}">
+            
+                <div class="freshly2">
+                    <div class="freshly_img_2">
+                      <div class="freshly_2_hover">
+                        <p class="product_name">
+                            乙女時代の刺繍がまぐち
+                        </p>
+                        <p class="price">¥1,200-</p>
+                        <div class="product_pagelink_sab2">クリックで詳細</div>
+                      </div>
+                    </div>
+                    <div class="freshly_main_mobile">
+                        <p class="build_to_order">受注生産</p>
+                        <h2>乙女時代の刺繍がまぐち</h2>
+                        <h2>¥1,200-</h2>
+                    </div>
+                </div>
+            </a>
+
+          </div>
+        </section>
+
+        <section class="popular">
+          <div class="title">
+            <img src="https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390450/hinatatown.img/popular_2x_gagjvx.png" alt="人気のアイテム" />
+          </div>
+
+          <a href="https://hinatagranma.handcrafted.jp/items/45002872">
+            <div class="popular_main">
+              <div class="popular_img_main"></div>
+              <div class="popular_main_hover">
+                <p class="product_name">乙女時代の刺繍がまぐち</p>
+                <p class="price">¥1,200-</p>
+                <div class="popular_main_product_pagelink">クリックで詳細</div>
+              </div>
+            </div>
+            <div class="freshly_main_mobile">
+                <p class="build_to_order">受注生産</p>
+                <h2>乙女時代の刺繍がまぐち</h2>
+                <h2>¥1,200-</h2>
+          </div>
+            
+          </a>
+
+          <div class="popular_sab">
+            <div class="popular_sab_line">
+
+            
+                  <div class="popular_1">
+                    <div class="popular_img_1"></div>
+                    <div class="popular_1_hover">
+                      <p class="product_name">乙女時代の刺繍がまぐち</p>
+                      <p class="price">¥1,200-</p>
+                      <div class="popular_1_product_pagelink">
+                        クリックで詳細
+                      </div>
+                  </div>
+                  <div class="freshly_main_mobile_small">
+                        <p class="build_to_order">受注生産</p>
+                        <h2>乙女時代の刺繍がまぐち</h2>
+                        <h2>¥1,200-</h2>
+                  </div>
+
+              </div>
+
+
+                
+                <div class="popular_2">
+  
+                  <div class="popular_img_2"></div>
+  
+                  <div class="popular_2_hover">
+                    <p class="product_name">乙女時代の刺繍がまぐち</p>
+                    <p class="price">¥1,200-</p>
+                    <div class="popular_2_product_pagelink">
+                      クリックで詳細
+                    </div>
+                  </div>
+                  <div class="freshly_main_mobile_small">
+                      <p class="build_to_order">受注生産</p>
+                      <h2>乙女時代の刺繍がまぐち</h2>
+                      <h2>¥1,200-</h2>
+                </div>
+                </div>
+
+              
+            </div>
+
+            <div class="popular_sab_line">
+
+                <a href="https://hinatagranma.handcrafted.jp/items/45002872">
+                  <div class="popular_3">
+                        <div class="popular_img_3"></div>
+                      <div class="popular_3_hover">
+                          <p class="product_name">乙女時代の刺繍がまぐち</p>
+                          <p class="price">¥1,200-</p>
+                          <div class="popular_3_product_pagelink">
+                            クリックで詳細
+                          </div>
+                     </div>
+                    <div class="freshly_main_mobile_small">
+                        <p class="build_to_order">受注生産</p>
+                        <h2>乙女時代の刺繍がまぐち</h2>
+                        <h2>¥1,200-</h2>
+                      </div>
+                    </div>
+
+
+                  
+                  <div class="popular_4">
+            
+                </a>
+
+                <a href="https://hinatagranma.handcrafted.jp/items/45002872">
+
+                  <div class="popular_img_4"></div>
+                    <div class="popular_4_hover">
+                      <p class="product_name">乙女時代の刺繍がまぐち</p>
+                      <p class="price">¥1,200-</p>
+                      <div class="popular_4_product_pagelink">
+                        クリックで詳細
+                      </div>
+                    </div>
+                 <div class="freshly_main_mobile_small">
+                    <p class="build_to_order">受注生産</p>
+                    <h2>乙女時代の刺繍がまぐち</h2>
+                    <h2>¥1,200-</h2>
+
+                  </div>
+                </a>
+
+              </div>
+          
+
+          </div>
+
+                      <a href="https://hinatagranma.handcrafted.jp/items/45002872">
+                        <div class="popular_main">
+                            <div class="popular_main">
+                                <div class="popular_img_main"></div>
+                                <div class="popular_main_hover">
+                                  <p class="product_name">乙女時代の刺繍がまぐち</p>
+                                  <p class="price">¥1,200-</p>
+                                  <div class="popular_main_product_pagelink">クリックで詳細</div>
+                                </div>
+                        </div>
+                         <div class="freshly_main_mobile">
+                            <p class="build_to_order">受注生産</p>
+                            <h2>乙女時代の刺繍がまぐち</h2>
+                            <h2>¥1,200-</h2>
+                         </div>
+                        </div>
+            
+            </a>
+
+            <div class="link_product">
+              <a href="{IndexPageCategory}">
+                <h3>もっと見る>></h3>
+              </a>
+            </div>
+        </section>
+
+        
+        <section class="news">
+          <div class="title">
+            <img src="https://res.cloudinary.com/hinatatown-photo/image/upload/v1628743259/hinatatown.img/news_2x_sedo4y.png" alt="お知らせ">
+          </div>
+          <div class="day">
+            <div class="day_title">
+            <h4>
+              {block:AppsBlog}
+              <div><a href="{AppsBlogArticlePageURL}">{AppsBlogArticleTitle}</a></div>
+              {/block:AppsBlog}
+            </h4>
+            </div>
+          </div>
+          
+          <hr>
+
+          <div class="day">
+            <h4>2021/4/15</h4>
+            <div class="day_title">
+              <h4>おばあちゃんが風邪をひいたためしばらくお休みします</h4>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="day">
+            <h4>2021/4/15</h4>
+            <div class="day_title">
+            <h4>新しい商品が５種類登場しました</h4>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="instagram">
+          <div class="title">
+            <img src="https://res.cloudinary.com/hinatatown-photo/image/upload/v1628743259/hinatatown.img/obastagram_2x_fgyqex.png" alt="おばすたぐらむ">
+          </div>
+          <div class="thumbnail">
+            <a href="https://www.instagram.com/{ShopInstagramId}"><div class="instagram_thumbnail-1"></div></a>
+            <a href="https://www.instagram.com/{ShopInstagramId}"><div class="instagram_thumbnail-2"></div></a>
+            <a href="https://www.instagram.com/{ShopInstagramId}"><div class="instagram_thumbnail-3"></div></a>
+            <a href="https://www.instagram.com/{ShopInstagramId}"><div class="instagram_thumbnail-4"></div></a>
+            <a href="https://www.instagram.com/{ShopInstagramId}"><div class="instagram_thumbnail-5"></div></a>
+          
+          </div>
+          <div class="more">
+            <img src="https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390447/hinatatown.img/instagram_icon_2x_xtmhwy.png" alt="おばすたぐらむ" />
+          
+            <a href="https://www.instagram.com/{ShopInstagramId}">Instagramでおばあちゃんの日常を見る>></a>
+          </div>
+        </section>
+
+        <footer class="footer">
+
+            <a href="{PrivacyPageURL}"><h4>{lang:Privacy}</h4></a>
+          <h4>/</h4>
+          <a href="{LawPageURL}"><h4>{lang:Law}</h4></a>
+        </footer>
+
+
+      </div>
+     
+  
+    </section>
+
+<!-- TOP画面ここまで -->
+{/block:IndexPage}{/block:NoIndexPageCategory}{/block:NoIndexPageSearch}
+
+
+
+{block:AboutPage}
+{block:NotItemPage}
+<!-- はじめましてさんへここから -->
+
+<section>  
+  <div class="body"></div>
+  <div class="granma">
+    <div class="mv_pc">
+      <div class="logo">
+        {LogoTag}
+        
+      </div>
+      </div>
+      <nav class="nav">
+        <nav class="nav-pc">
+                <ul class="nav-pc-ul">
+                    <a href="{IndexPageURL}"><li>トップ</li></a>
+                    <a href="{AboutPageURL}"><li>はじめましてさんへ</li></a>
+
+                        <a href="https://hinatagranma.handcrafted.jp/categories/3468571"><li>商品一覧</li></a>
+                        
+                    <a href="{ContactPageURL}"><li>お問い合わせ</li></a>
+                    <a href="https://www.instagram.com/{ShopInstagramId}"> <li>おばすたぐらむ</li></a>
+                    {BASEMenuTag}
+                </ul>
+        </nav>
+      </nav>
+    <nav class="nav_mobile">
+      <div class="sp-nav-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </div>
+  </div>
+        
+    
+          <div class="contents">
+            <section class="nice_to_meet_you">
+              <div class="title">
+                <img src="https://res.cloudinary.com/hinatatown-photo/image/upload/v1621397965/hinatatown.img/site_overview_2x_dpmpvq.png" alt="" />
+              </div>
+    
+              <div class="sentence">
+                <h1>
+                  商品だけでなく、<br />
+                  コミュニケーションをお届けします<img
+                    src="https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390450/hinatatown.img/rose_icon_2x_daenzm.png"
+                    alt="rose"
+                  />
+                </h1>
+    
+                <h4>
+                  宮崎に住む手芸の大好きなおばあちゃんたち。<br />
+                  彼女たちとハンドメイド好きさんのご縁を結ぶためにできたのがこのサイトです。<br />
+                  <br />
+                  おばあちゃんたちの素晴らしい作品をぜひ知ってほしい。<br />
+                  おばあちゃんたちにも、制作やコミュニケーションの楽しみを提供したい。<br />
+                  そこで宮崎の素敵なおばあちゃんたちの代役として「おばあちゃん」というキャラクターを立て、
+                  いつでも気軽に遊びに来れるおばあちゃんの家を作りました。<br />
+                  <br />
+                  便利な通販だからこそ、そこに暖かさをひとさじ。<br />
+                  商品お届けの際には「おばあちゃん」からのメッセージも添えてお届けします。<br />
+                  <br />
+                  また、「おばすたぐらむ」ではリアルタイムなコミュニケーションも。<br />
+                  おばあちゃんの日常や制作風景を見られるほか<br />
+                  皆様が可愛いと思う商品の情報もお待ちしております。<br />
+                </h4>
+              </div>
+            </section>
+    
+            <section class="flow_after_ordering">
+              <div class="title">
+                <img src="https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390446/hinatatown.img/flow_after_ordering_2x_frxxee.png" alt="" />
+              </div>
+    
+              <div class="sentence_2">
+                <div class="procedure">
+                  <h1>①ご注文完了</h1>
+                  <h4>
+                   ご注文確認後、お客様が入力されたメールアドレスにて、
+                   ご注文確認メールが送信されます。<br />
+                   <br />
+                   <br />
+                   ※ご注文後に注文内容確認メールが届かない場合、お客様のメールの設定上、
+                   受信できないようにているか、メールアドレスを誤って入力してる恐れがあります。
+                   「お問い合わせ」までご再度ご連絡ください。
+                  </h4>
+                </div>
+                <div class="procedure">
+                 <h1> ②ご注文確認後</h1>
+                   <h4>
+                   お客様のご注文の確認後発送の準備を致します。<br />
+                   クレジットカード決済の場合、決済確認後、銀行振り込みの場合は振り込み確認後の
+                   発送となります。<br />
+                   (クレジットカード決済は購入手続きの最後の画面「購入する」を押した後、決済画面が
+                   でます。) 
+                   </h4>
+                </div>
+                <div Class="procedure">
+                  <h1> ③お客様へお届け</h1>
+                  <h4>
+                   できるだけ早めの発送に取り掛かりますので最短翌日のお届けとなります。<br />
+                   最大でも3日しかかかりませんが、天候やトラブルなどの場合、
+                   ３日以上かかってしまいます。遅延の場合必ずお客様に遅延の旨をご連絡差し上げます。
+                  </h4>
+                </div>
+              </div>
+    
+              <div class="table">
+                  <h5>
+                      <a href="{PrivacyPageURL}">プライバシーポリシー</a> 
+                      <a href="">/</a> 
+                      <a href="{LawPageURL}">特定商取引に基づく表記</a>
+                  </h5>
+                  <img src="https://res.cloudinary.com/hinatatown-photo/image/upload/v1621390451/hinatatown.img/table_2x_rhtf5y.png" alt="テーブル" />
+                </div>
+              </section>
+      
+              <footer class="footer"></footer>
+            </div>
+   </section>
+
+<!-- はじめましてさんへここまで -->
+{/block:NotItemPage}
+{/block:AboutPage}
+
+{block:AppsItemCategory}
+{block:IndexPageCategory}
+<!-- 商品一覧ここから -->
+
+    <section class="mobile">
+      <div class="granma">
+        <div class="mv">
+          <div class="logo">
+            {LogoTag}
+          </div>
+          <nav class="nav">
+            <nav class="nav-pc">
+                <ul class="nav-pc-ul">
+                    <a href="{IndexPageURL}"><li>トップ</li></a>
+                    <a href="{AboutPageURL}"><li>はじめましてさんへ</li></a>
+
+                        <a href="https://hinatagranma.handcrafted.jp/categories/3468571"><li>商品一覧</li></a>
+                        
+                    <a href="{ContactPageURL}"><li>お問い合わせ</li></a>
+                    <a href="https://www.instagram.com/{ShopInstagramId}"> <li>おばすたぐらむ</li></a>
+                    {BASEMenuTag}
+                </ul>
+            </nav>
+          </nav>
+          <nav class="nav_mobile">
+            <div class="sp-nav-btn">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="main_section">
+      <div class="product_list">
+        <div class="left"></div>
+        <div class="shelf">
+          
+          <div class="product_line">
+
+ {block:HasItems}
+ {block:Items}
+              <a href="{ItemPageURL}">
+                  {block:AppsItemLabel}
+                  {AppsItemLabelTag}
+              {/block:AppsItemLabel}
+              
+              <div class="mobile_box">
+                  <div class="product_box_1">
+                    <div class="product_1">
+                      <div class="product_img_1">
+                        <img src="{block:ItemImage1}{ItemImage1URL-300}{/block:ItemImage1}{block:NoItemImage1}{ItemNoImageURL}{/block:NoItemImage1}" alt="{ItemTitle}" title="{ItemTitle}" class="image-resize">
+                      </div>
+    
+                      <div class="product_1_hover">
+                        <p class="product_name">
+                            {ItemTitle}
+                        </p>
+                        <p class="price">{ItemPrice}</p>
+                        <div class="product_1_pagelink">
+                          クリックで詳細
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_mobile">
+                    <p class="build_to_order">受注生産</p>
+                    <h2>{ItemTitle}</h2>
+                    <h2>{ItemPrice}</h2>
+                  </div>
+                </div>
+              </a>
+    {/block:Items}
+    {/block:HasItems}
+
+
+
+<div class="product_line_4">
+</div>
+                                     
+        <div class="right"></div>
+      </div>
+      <footer class="footer">
+        <div class="footer_contents">
+          <h4>
+            <a href="{PrivacyPageURL}">プライバシーポリシー</a> 
+            <a href="">/</a> 
+            <a href="{LawPageURL}">特定商取引に基づく表記</a>
+          </h4>
+
+          <nav class="nav">
+              <ul>
+                  <a href="{IndexPageURL}"><li>トップ</li></a>
+                  <a href="{AboutPageURL}"><li>はじめましてさんへ</li></a>
+
+                      <a href="https://hinatagranma.handcrafted.jp/categories/3468571"><li>商品一覧</li></a>
+                      
+                  <a href="{ContactPageURL}"><li>お問い合わせ</li></a>
+                  <a href="https://www.instagram.com/{ShopInstagramId}"> <li>おばすたぐらむ</li></a>
+                  {BASEMenuTag}
+              </ul>
+          </nav>
+        </div>
+      </footer>
+    </section>
+
+
+
+<!-- 商品一覧ここまで -->
+{/block:IndexPageCategory}
+{/block:AppsItemCategory}
+              
+    
+
+
+
+{block:ItemPage}
+<!-- 商品詳細ここから -->
+<section>
+    <div class="granma">
+      <div class="mv">
+        <div class="logo">
+            {LogoTag}
+        </div>
+        <nav class="nav">
+          <nav class="nav-pc">
+              <ul class="nav-pc-ul">
+                  <a href="{IndexPageURL}"><li>トップへ戻る</li></a>
+                  <a href="{AboutPageURL}"><li>はじめましてさんへ</li></a>
+
+                      <a href="https://hinatagranma.handcrafted.jp/categories/3468571"><li>商品一覧</li></a>
+                      
+                  <a href="{ContactPageURL}"><li>お問い合わせ</li></a>
+                  <a href="https://www.instagram.com/{ShopInstagramId}"> <li>おばすたぐらむ</li></a>
+                  {BASEMenuTag}
+              </ul>
+          </nav>
+        </nav>
+        <nav class="nav_mobile">
+          <div class="sp-nav-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="contents">
+      <div class="product_list">
+        
+        <section class="photo">
+            {block:ItemImage1}
+          <div class="main_photo">
+              <img src="{ItemImage1URL-origin}">
+          </div>
+            {/block:ItemImage1}
+          <div class="sab_photo">
+            
+              {block:ItemImage2}
+            <div class="sab_1">
+                <img src="{ItemImage2URL-500}">
+            </div>
+              {/block:ItemImage2}
+              {block:ItemImage3}
+            <div class="sab_2">
+                <img src="{ItemImage3URL-500}">
+            </div>
+              {/block:ItemImage3}
+              {block:ItemImage4}
+            <div class="sab_3">
+                <img src="{ItemImage4URL-500}">
+            </div>
+              {/block:ItemImage4}
+          </div>
+        </section>
+
+        <section class="infomation">
+          <div class="sentence">
+            <div class="title">
+              <h1>{ItemTitle}</h1>
+              <div class="price">
+                <h2>{ItemPrice}</h2>
+              </div>
+              <h3 class="description">
+                  商品ID{ItemStock}<br>
+                  <br>
+                  {ItemDetail-origin}
+              </h3>
+            </div>
+          </div>
+          <hr />
+          <div class="order">
+
+                {block:PurchaseForm}
+                {ItemSelectTag}
+              <div class="btn">
+                {PurchaseButton}
+              </div>
+            {/block:PurchaseForm}
+          </div>
+          <hr />
+
+          <div class="precautions">
+            <h4>
+              【素材】<br />
+              バッグ本体 ＝ Cotton 100% <br />
+              フリンジ部分 ＝ Polyester 80% Polyurethane 20% <br />
+              <br />
+              【サイズ】<br />
+              Sサイズ<br />
+              W×H×D：約37cm×約21cm×約16cm <br />
+              HANDLE：約30cm <br />
+              STRAP：約63cm～約111cm（サイズ調整可能） <br />
+            </h4>
+            <hr />
+            <h4>
+              その他、ご注意とお願い <br />
+              <br />
+              【帆布製品について】<br />
+              製作の都合上、帆布に多少のシワが入る場合がございます。<br />
+              使用している素材は染色、又は脱色をせず、原料の風合い、色味を最大限に活かしております。その為、原料の僅かな色差がそのまま生地色となり、植物の破片（綿実、綿糟等）は黒い点となります。
+              これらは生成り製品の天然素材の証です。天然素材の風合いをお楽しみください。<br />
+              <br />
+              【色落ち•水濡れについて】<br />
+              濃色品の場合、摩擦により淡色（特に白等）物に色移りする場合が有りますので十分にご注意下さい。<br />
+              液状の汚れは、シミになりやすい為、汚れがついたら速やかにガーゼ等で吸い取るようにし風通しのいい所で陰干しをし完全に乾かして下さい。<br />
+              直射日光や蛍光灯などの長時間照射により色あせ、変色、水や摩擦により色落ち、色移りすることがありますのでご注意ください。<br />
+            </h4>
+            <hr />
+            <h4>
+              【発送について】<br />
+              ご入金確認後、3日以内(土日祝を除く)に発送致します。<br />
+              配達の日時指定は出荷後にお届けしております”お問い合わせ番号”を元に佐川急便までご連絡をお願い致します。<br />
+              ※新型コロナウイルス感染の影響に伴い、各国・地域で国際郵便物の受入停止、および遅延が発生しておりますため当店では海外発送を当分の間、一時休止させていただきます。
+              お客様にはご迷惑をおかけいたしますが、ご了承くださいますよう何卒よろしくお願い申し上げます。<br />
+              <br />
+              【キャンセルについて】<br />
+              大変申し訳ございませんがお客様都合によるキャンセル・変更はお受けいたしておりません。<br />
+              十分にご検討いただいた上でお買い求めくださいませ。
+            </h4>
+            <h4>{ItemAttentionTag}{IllegalReportTag}</h4>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="footer_contents">
+            <h4>
+                <a href="{PrivacyPageURL}">プライバシーポリシー</a> 
+                <a href="">/</a> 
+                <a href="{LawPageURL}">特定商取引に基づく表記</a>
+              </h4>
+          <nav class="nav">
+              <ul>
+                  <a href="{IndexPageURL}"><li>トップへ戻る</li></a>
+                  <a href="{AboutPageURL}"><li>はじめましてさんへ</li></a>
+
+                      <a href="https://hinatagranma.handcrafted.jp/categories/3468571"><li>商品一覧</li></a>
+                      
+                  <a href="{ContactPageURL}"><li>お問い合わせ</li></a>
+                  <a href="https://www.instagram.com/{ShopInstagramId}"> <li>おばすたぐらむ</li></a>
+                  {BASEMenuTag}
+              </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </section>
+<!-- 商品詳細ここまで -->
+{/block:ItemPage}
+
+
+{block:ContactPage}
+{block:NotItemPage}
+<!-- お問い合わせここから -->
+  <section>
+  <div class="granma">
+      <div class="mv_pc">
+
+        <div class="logo">
+          {LogoTag}
+        </div>
+        </div>
+        <nav class="nav">
+          <nav class="nav-pc">
+                  <ul class="nav-pc-ul">
+                      <a href="{IndexPageURL}"><li>トップ</li></a>
+                      <a href="{AboutPageURL}"><li>はじめましてさんへ</li></a>
+
+                          <a href="https://hinatagranma.handcrafted.jp/categories/3468571"><li>商品一覧</li></a>
+                          
+                      <a href="{ContactPageURL}"><li>お問い合わせ</li></a>
+                      <a href="https://www.instagram.com/{ShopInstagramId}"> <li>おばすたぐらむ</li></a>
+                      {BASEMenuTag}
+                  </ul>
+          </nav>
+        </nav>
+      <nav class="nav_mobile">
+        <div class="sp-nav-btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </div>
+    </div>
+          
+
+      <section class="contents">
+        <div class="contact_us">
+
+          <div class="title">
+              <h1>お問い合わせ</h1>
+              {ContactContentsTag}
+
+        </div>  
+
+
+      </section>
+        
+
+        <footer class="footer">
+        </footer>
+      </div>
+  </section>
+
+<!-- お問い合わせここまで -->
+{/block:NotItemPage}
+{/block:ContactPage}
+
+{block:PrivacyPage}
+{block:NotItemPage}
+<!-- プライバシーポリシーここから -->
+
+  {PrivacyContentsTag}
+
+<!-- プライバシーポリシーここまで -->
+{/block:NotItemPage}
+{/block:PrivacyPage}
+
+{block:LawPage}{block:NotItemPage}
+<!-- 「特定商取引法に基づく表記」ここから -->
+
+    {LawContentsTag}
+
+  <!-- 「特定商取引法に基づく表記」ここまで -->
+  {/block:NotItemPage}{/block:LawPage}
+</body>
+</html>
